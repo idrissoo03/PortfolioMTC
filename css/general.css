@@ -63,6 +63,9 @@ html, body {
     background: var(--nav-col-hover);
 }
 
+.nav  > input[type="checkbox"] {
+    display: none;
+}
 
 @media(max-width:900px){
     .nav {
@@ -106,5 +109,11 @@ html, body {
     .nav > .nav-list > li {
         margin-top: 1.5rem;
         width: 100%;
+    }
+
+    .nav > #nav-check:checked ~.nav-list{
+        calc(100vh - 50px);
+        
+
     }
 }
